@@ -1,0 +1,113 @@
+:root {
+    --color-01: #f4f4f4;
+    --color-02: #fff;
+    --color-03: #ddd;
+    --color-04: #4caf50;
+    --color-04-hover: #409343;
+    --color-05: #e0e0e0;
+}
+
+/* ———————————–––––––––––––––------------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial' , sans-serif;
+
+    width: 350px;
+    background: var(--color-01);
+}
+
+/* ———————————–––––––––––––––------------------------ */
+
+#container {
+    background: var(--color-02);
+
+    padding: 15px;
+    border-radius: 8px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#new-task {
+    width: calc(100% - 20px);
+
+    padding: 10px;
+    margin-bottom: 10px ;
+
+    border: 1px solid var(--color-03);
+    border-radius: 4px;
+
+    outline: none;
+}
+
+#add-task {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+
+    background: var(--color-04);
+    color: var(--color-02);
+
+    border: none ;
+    border-radius: 4px;
+
+    font-size: 13px;
+
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+/* ———————————–––––––––––––––------------------------ */
+
+#task-list {
+    margin-top: 20px;
+    padding:  0;
+
+    list-style: none;
+}
+
+#task-list li {
+    display: flex;
+    align-items: center;
+
+    background: var(--color-05);
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+
+    overflow: hidden;
+}
+
+#task-list li span {
+    flex-grow: 1;
+
+    margin-left: 10px;
+
+    word-break: break-all;
+}
+
+input[type='checkbox'] {
+    cursor: pointer;
+}
+
+button:not(#add-task){
+    font-size: 12px;
+
+    padding: 5px 8px;
+    margin-left: 5px;
+
+    border: none;
+    border-radius: 4px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* ———————————–––––––––––––––------------------------ */
